@@ -2563,6 +2563,151 @@
       "_type": "request"
     },
     {
+      "_id": "req_a71e9d6b5fa541e3a079513b34310670",
+      "parentId": "fld_b1eab30599fa4506b4e7f9d13cabe83a",
+      "modified": 1646936579586,
+      "created": 1646935925033,
+      "url": "{{ domain }}/api/v3/pix/qrCodes/decode",
+      "name": "Decodificar um QRCode",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"payload\": \"00020126360014br.gov.bcb.pix0114+554799878454552040000530398654040.005802BR5905ASAAS6009São Paulo61088922730162290525ASAAS-1-2SHTS88FSECYMCUQX6304CA10\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_e7173d51e92b449085231317e516beab"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1646935925033,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_b1eab30599fa4506b4e7f9d13cabe83a",
+      "parentId": "fld_df2242f08b9346ac84263ac9c8126056",
+      "modified": 1646649745398,
+      "created": 1646649733296,
+      "name": "Pix",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1645211601121.5,
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_df2242f08b9346ac84263ac9c8126056",
+      "parentId": "wrk_59705f1de35b4bba8f33cc8dc4608272",
+      "modified": 1646936637550,
+      "created": 1645211601186,
+      "name": "API ASAAS v3",
+      "description": "Nós aqui do Asaas adoramos poupar tempo de todo mundo, por isso fizemos essa collection com todas as nossas APIs. 👍\n\n# Documentação\n\n  \nA documentação completa pode ser acessada [neste link.](https://asaasv3.docs.apiary.io/)\n\nAmbientes disponíveis:\n\n*   Local\n*   Sandbox\n*   Produção\n    \n\nNão esquece de consultar as variáveis da coleção.\n\n## Autenticação\n\nPara testar os exemplos aqui descritos é necessário ter uma conta no Asaas. Caso você ainda não tenha, basta [criar uma conta clicando aqui](https://www.asaas.com/onboarding/createAccount?utm_source=postman) ou [aqui para criar em nossa sandbox](https://sandbox.asaas.com/onboarding/createAccount).\n\nA autenticação é feita através do fornecimento da sua API Key. Ela deve ser transmitida em todas as requisições no header \\`access_token\\`. Caso a API Key seja inválida ou não seja informada, o Asaas retornará `HTTP 401`.  \nAs API Keys são distintas entre os ambientes de Sandbox e Produção, portanto lembre-se de alterá-la quando mudar a URL.  \nPara obter sua API Key [acesse a Aba Integração na área Minha Conta](https://www.asaas.com/config/index?tab=pushNotification).  \nNa collection sua API Key pode ser informada na área de ambientes.\n\n> ***Atenção***:  \n> Sua API Key carrega muitos privilégios, portanto certifique-se de mantê-la protegida. Não informe ela em atendimentos e nem a exponha no front-end da sua aplicação. Além disso, não é possível recuperá-la caso perdida, sendo necessário a geração de uma nova.",
+      "environment": {
+        "id_do_cliente": "",
+        "id_da_cobranca": "",
+        "id_da_parcela": "",
+        "id_da_assinatura": "",
+        "id_do_link_de_pagamento": "",
+        "id_da_imagem_do_link_de_pagamento": "",
+        "id_da_notificacao": "",
+        "id_da_transferencia": "",
+        "id_da_antecipacao": "",
+        "id_da_recuperacao": "",
+        "id_do_pagamento_de_conta": "",
+        "id_da_consulta_serasa": "",
+        "id_da_nota_fiscal": "",
+        "id_da_transacao_pix": ""
+      },
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1645211601186,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_59705f1de35b4bba8f33cc8dc4608272",
+      "parentId": null,
+      "modified": 1645211601187,
+      "created": 1640789082544,
+      "name": "API ASAAS v3",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_ee6448d6167e461a8445266d43a84160",
+      "parentId": "fld_b1eab30599fa4506b4e7f9d13cabe83a",
+      "modified": 1646936591155,
+      "created": 1646935890997,
+      "url": "{{ domain }}/api/v3/pix/qrCodes/pay",
+      "name": "Pagar um QRCode",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"qrCode\": {\n\t\t\"payload\": \"00020126360014br.gov.bcb.pix0114+554799878454552040000530398654040.005802BR5905ASAAS6009São Paulo61088922730162290525ASAAS-1-2SHTS88FSECYMCUQX6304CA10\"\n\t},\n\t\"value\": 100.00,\n\t\"description\": \"Suco de laranja\",\n\t\"scheduleDate\": \"2022-03-15 00:00:00\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_e000de880d524bffb32075e1a6a846ac"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1646935890997,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_549192d21dd44e79927bac8951e95b82",
+      "parentId": "fld_b1eab30599fa4506b4e7f9d13cabe83a",
+      "modified": 1646936765549,
+      "created": 1646916308839,
+      "url": "  {{ domain }}/api/v3/pix/qrCodes/static",
+      "name": "Criar um QRCode estático",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"addressKey\": \"marcelo.almeida@gmail.com\",\n\t\"description\": \"Churrasco\",\n\t\"value\": 50.00\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_47ac359d93cc411bb592b40a67b6e8b6"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1646916308839,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
       "_id": "req_158c69ce258e41aa9fbe33d852f5e62f",
       "parentId": "fld_b1eab30599fa4506b4e7f9d13cabe83a",
       "modified": 1646652266744,
