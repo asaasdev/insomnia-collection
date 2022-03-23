@@ -516,7 +516,10 @@
             "name": "Estornar cobrança",
             "description": "",
             "method": "POST",
-            "body": {},
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"value\": 5,\n\t\"reason\": \"REQUESTED_BY_PAYER\"\n}"
+              },
             "parameters": [],
             "headers": [
                 {
