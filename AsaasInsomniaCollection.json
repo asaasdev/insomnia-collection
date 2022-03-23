@@ -518,7 +518,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"value\": 5,\n\t\"reason\": \"REQUESTED_BY_PAYER\"\n}"
+                "text": "{\n\t\"value\": 5,\n\t\"description\": \"Valor a mais\"\n}"
               },
             "parameters": [],
             "headers": [
