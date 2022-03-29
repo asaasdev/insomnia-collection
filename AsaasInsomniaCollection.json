@@ -69,7 +69,8 @@
                 "id_do_pagamento_de_conta": "",
                 "id_da_consulta_serasa": "",
                 "id_da_nota_fiscal": "",
-                "id_da_transacao_pix": ""
+                "id_da_transacao_pix": "",
+                "id_da_chave_pix": ""
             },
             "environmentPropertyOrder": null,
             "metaSortKey": -1645211601186,
@@ -3114,6 +3115,107 @@
             "_type": "request_group"
         },
         {
+            "_id": "req_0f091460646d4d21a9c1e218865741c0",
+            "parentId": "fld_b1eab30599fa4506b4e7f9d13cabe83a",
+            "modified": 1648135995969,
+            "created": 1648135918184,
+            "url": "{{ domain }}/api/v3/pix/addressKeys",
+            "name": "Criar uma chave",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"type\": \"EVP\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_62891f44c3ce4d54a2bb29c4268f653f"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1648135918184,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_2d59b29ae1b0410990f3c4b8337782a6",
+            "parentId": "fld_b1eab30599fa4506b4e7f9d13cabe83a",
+            "modified": 1648136010108,
+            "created": 1647609078062,
+            "url": "{{ domain }}/api/v3/pix/addressKeys",
+            "name": "Listar Chaves Pix",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1647609078062,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_8cc463239ad54c9f8ce2c1ba928b8d5b",
+            "parentId": "fld_b1eab30599fa4506b4e7f9d13cabe83a",
+            "modified": 1648136125003,
+            "created": 1648136051443,
+            "url": "{{ domain }}/api/v3/pix/addressKeys/{{ id_da_chave_pix }}",
+            "name": "Recuperar uma única chave",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1648136051443,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_fe976e6b9e694f0e96d99761cee62bd8",
+            "parentId": "fld_b1eab30599fa4506b4e7f9d13cabe83a",
+            "modified": 1648136162878,
+            "created": 1648136139744,
+            "url": "{{ domain }}/api/v3/pix/addressKeys/{{ id_da_chave_pix }}",
+            "name": "Remover chave",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1648136139744,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
             "_id": "req_ee6448d6167e461a8445266d43a84160",
             "parentId": "fld_b1eab30599fa4506b4e7f9d13cabe83a",
             "modified": 1646936591155,
@@ -3512,7 +3614,8 @@
                 "id_do_pagamento_de_conta": "",
                 "id_da_consulta_serasa": "",
                 "id_da_nota_fiscal": "",
-                "id_da_transacao_pix": ""
+                "id_da_transacao_pix": "",
+                "id_da_chave_pix": ""
             },
             "dataPropertyOrder": {
                 "&": [
@@ -3529,7 +3632,8 @@
                     "id_do_pagamento_de_conta",
                     "id_da_consulta_serasa",
                     "id_da_nota_fiscal",
-                    "id_da_transacao_pix"
+                    "id_da_transacao_pix",
+                    "id_da_chave_pix"
                 ]
             },
             "color": null,
