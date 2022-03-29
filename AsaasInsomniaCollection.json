@@ -3528,7 +3528,7 @@
             "parentId": "fld_376d083ff8a54009b84498bc434822e1",
             "modified": 1645211601114,
             "created": 1645211601114,
-            "url": "{{domain}}/api/v3/accounts?limit=&offset=",
+            "url": "{{domain}}/api/v3/accounts?cpfCnpj=&name=&email=&walletId=&limit=&offset=",
             "name": "Listar contas",
             "description": "",
             "method": "GET",
