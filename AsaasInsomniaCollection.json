@@ -1,8 +1,8 @@
 {
     "_type": "export",
     "__export_format": 4,
-    "__export_date": "2022-03-18T18:32:53.667Z",
-    "__export_source": "insomnia.desktop.app:v2022.2.0",
+    "__export_date": "2022-04-19T18:11:24.800Z",
+    "__export_source": "insomnia.desktop.app:v2021.5.3",
     "resources": [
         {
             "_id": "req_ad665af8262a4c388b598192ab4396d3",
@@ -1523,21 +1523,22 @@
         {
             "_id": "req_491decef1f684f39a52efd9c2ec33cd8",
             "parentId": "fld_7a775ed35d6c4108af16422aadd87ddc",
-            "modified": 1645211601151,
+            "modified": 1650391135823,
             "created": 1645211601151,
             "url": "{{domain}}/api/v3/transfers",
-            "name": "Transferir para conta bancária",
+            "name": "Transferir para conta bancária via TED",
             "description": "",
             "method": "POST",
             "body": {
                 "mimeType": "",
-                "text": "    {\r\n        \"value\": 1000.00,\r\n        \"bankAccount\": {\r\n            \"bank\": {\r\n                \"code\": \"237\"\r\n            },\r\n            \"accountName\": \"Conta do Bradesco\",\r\n            \"ownerName\": \"Marcelo Almeida\",\r\n            \"ownerBirthDate\": \"1995-04-12\",\r\n            \"cpfCnpj\": \"52233424611\",\r\n            \"agency\": \"1263\",\r\n            \"account\": \"9999991\",\r\n            \"accountDigit\": \"1\",\r\n            \"bankAccountType\": \"CONTA_CORRENTE\",\r\n        }\r\n    }"
+                "text": "    {\n        \"value\": 1000.00,\n        \"bankAccount\": {\n            \"bank\": {\n                \"code\": \"237\"\n            },\n            \"accountName\": \"Conta do Bradesco\",\n            \"ownerName\": \"Marcelo Almeida\",\n            \"ownerBirthDate\": \"1995-04-12\",\n            \"cpfCnpj\": \"52233424611\",\n            \"agency\": \"1263\",\n            \"account\": \"9999991\",\n            \"accountDigit\": \"1\",\n            \"bankAccountType\": \"CONTA_CORRENTE\"\n        },\n        \"operationType\": \"TED\"\n    }"
             },
             "parameters": [],
             "headers": [
                 {
                     "name": "Content-Type",
-                    "value": "application/json"
+                    "value": "application/json",
+                    "id": "pair_4664d619119948c796a0690aaacc3c8a"
                 }
             ],
             "authentication": {},
@@ -1562,6 +1563,134 @@
             "environmentPropertyOrder": null,
             "metaSortKey": -1645211601151,
             "_type": "request_group"
+        },
+        {
+            "_id": "req_773f622d7fa44ad3a4f608bbfc7f1b27",
+            "parentId": "fld_7a775ed35d6c4108af16422aadd87ddc",
+            "modified": 1650391250334,
+            "created": 1650391228552,
+            "url": "{{domain}}/api/v3/transfers",
+            "name": "Transferir para conta bancária default Pix",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "",
+                "text": "    {\n        \"value\": 1000.00,\n        \"bankAccount\": {\n            \"bank\": {\n                \"code\": \"237\"\n            },\n            \"accountName\": \"Conta do Bradesco\",\n            \"ownerName\": \"Marcelo Almeida\",\n            \"ownerBirthDate\": \"1995-04-12\",\n            \"cpfCnpj\": \"52233424611\",\n            \"agency\": \"1263\",\n            \"account\": \"9999991\",\n            \"accountDigit\": \"1\",\n            \"bankAccountType\": \"CONTA_CORRENTE\"\n        }\n    }"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_4664d619119948c796a0690aaacc3c8a"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1645211601150.75,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_fa3f1bbab0d142b9a64e7647d9f0860b",
+            "parentId": "fld_7a775ed35d6c4108af16422aadd87ddc",
+            "modified": 1650391210310,
+            "created": 1650391077785,
+            "url": "{{domain}}/api/v3/transfers",
+            "name": "Transferir para conta bancária via Pix manual",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "",
+                "text": "    {\n        \"value\": 1000.00,\n        \"bankAccount\": {\n            \"bank\": {\n                \"code\": \"237\"\n            },\n            \"accountName\": \"Conta do Bradesco\",\n            \"ownerName\": \"Marcelo Almeida\",\n            \"ownerBirthDate\": \"1995-04-12\",\n            \"cpfCnpj\": \"52233424611\",\n            \"agency\": \"1263\",\n            \"account\": \"9999991\",\n            \"accountDigit\": \"1\",\n            \"bankAccountType\": \"CONTA_CORRENTE\"\n        },\n        \"operationType\": \"PIX\"\n    }"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_4664d619119948c796a0690aaacc3c8a"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1645211601150.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_cf5e0c6f8d45438ba1846c3b4e85e3e8",
+            "parentId": "fld_7a775ed35d6c4108af16422aadd87ddc",
+            "modified": 1650391194299,
+            "created": 1650391177512,
+            "url": "{{domain}}/api/v3/transfers",
+            "name": "Transferir para conta bancária via Pix com chave",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "",
+                "text": "{\n   \"pixAddressKey\": \"+5547999999999\",\n   \"value\":1000.0,\n   \"description\":\"Pix com chave\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_4664d619119948c796a0690aaacc3c8a"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1645211601150.375,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_e92abb7738a047e7b5a1ee0bad5f56e5",
+            "parentId": "fld_7a775ed35d6c4108af16422aadd87ddc",
+            "modified": 1650391159598,
+            "created": 1650391147511,
+            "url": "{{domain}}/api/v3/transfers",
+            "name": "Transferir para conta bancária via Pix (agendado)",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "",
+                "text": "    {\n        \"value\": 1000.00,\n        \"bankAccount\": {\n            \"bank\": {\n                \"code\": \"237\"\n            },\n            \"accountName\": \"Conta do Bradesco\",\n            \"ownerName\": \"Marcelo Almeida\",\n            \"ownerBirthDate\": \"1995-04-12\",\n            \"cpfCnpj\": \"52233424611\",\n            \"agency\": \"1263\",\n            \"account\": \"9999991\",\n            \"accountDigit\": \"1\",\n            \"bankAccountType\": \"CONTA_CORRENTE\"\n        },\n        \"operationType\": \"PIX\",\n\t\t\t  \"scheduleDate\": \"2022-04-01\"\n    }"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_4664d619119948c796a0690aaacc3c8a"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1645211601150.25,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
         },
         {
             "_id": "req_2f4ea37d2a744a5a928d2b9f3098afa7",
