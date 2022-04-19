@@ -1634,7 +1634,7 @@
             "modified": 1650391194299,
             "created": 1650391177512,
             "url": "{{domain}}/api/v3/transfers",
-            "name": "Transferir para conta bancária via Pix com chave",
+            "name": "Transferir via Pix com chave",
             "description": "",
             "method": "POST",
             "body": {
