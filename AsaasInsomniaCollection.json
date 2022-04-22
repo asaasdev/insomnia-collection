@@ -2664,6 +2664,34 @@
             "_type": "request"
         },
         {
+            "_id": "req_1080f854ef614bd4847db6fc90bd493d",
+            "parentId": "fld_7d4994db9e8e4d6ab6661b86bcc5a5dd",
+            "modified": 1650651885459,
+            "created": 1650651688904,
+            "url": "{{domain}}/api/v3/myAccount/accountNumber/",
+            "name": "Recuperar número de conta no Asaas",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1645211601081,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
             "_id": "req_52d3a3a9424d4a3cad49e9560e66a2e4",
             "parentId": "fld_42f0355f8e1d4d6f9ea67fd9f3af196a",
             "modified": 1645211601130,
