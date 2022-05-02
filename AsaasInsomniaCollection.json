@@ -51,7 +51,7 @@
         {
             "_id": "fld_df2242f08b9346ac84263ac9c8126056",
             "parentId": "wrk_59705f1de35b4bba8f33cc8dc4608272",
-            "modified": 1645211601186,
+            "modified": 1650294048277,
             "created": 1645211601186,
             "name": "API ASAAS v3",
             "description": "Nós aqui do Asaas adoramos poupar tempo de todo mundo, por isso fizemos essa collection com todas as nossas APIs. 👍\n\n# Documentação\n\n  \nA documentação completa pode ser acessada [neste link.](https://asaasv3.docs.apiary.io/)\n\nAmbientes disponíveis:\n\n*   Local\n*   Sandbox\n*   Produção\n    \n\nNão esquece de consultar as variáveis da coleção.\n\n## Autenticação\n\nPara testar os exemplos aqui descritos é necessário ter uma conta no Asaas. Caso você ainda não tenha, basta [criar uma conta clicando aqui](https://www.asaas.com/onboarding/createAccount?utm_source=postman) ou [aqui para criar em nossa sandbox](https://sandbox.asaas.com/onboarding/createAccount).\n\nA autenticação é feita através do fornecimento da sua API Key. Ela deve ser transmitida em todas as requisições no header \\`access_token\\`. Caso a API Key seja inválida ou não seja informada, o Asaas retornará `HTTP 401`.  \nAs API Keys são distintas entre os ambientes de Sandbox e Produção, portanto lembre-se de alterá-la quando mudar a URL.  \nPara obter sua API Key [acesse a Aba Integração na área Minha Conta](https://www.asaas.com/config/index?tab=pushNotification).  \nNa collection sua API Key pode ser informada na área de ambientes.\n\n> ***Atenção***:  \n> Sua API Key carrega muitos privilégios, portanto certifique-se de mantê-la protegida. Não informe ela em atendimentos e nem a exponha no front-end da sua aplicação. Além disso, não é possível recuperá-la caso perdida, sendo necessário a geração de uma nova.",
@@ -396,9 +396,9 @@
         {
             "_id": "req_bc0d7f1b342a4468bbb8ed38fdd803ac",
             "parentId": "fld_92f2a158264540e9b86f65c0769bc82c",
-            "modified": 1645211601176,
+            "modified": 1650293906706,
             "created": 1645211601176,
-            "url": "{{domain}}/api/v3/payments?customer=&billingType=&status=&subscription=&installment=&externalReference=&paymentDate=&anticipated=&paymentDate%5Bge%5D=&paymentDate%5Ble%5D=&dueDate%5Bge%5D=&dueDate%5Ble%5D=&offset=&limit=",
+            "url": "{{domain}}/api/v3/payments",
             "name": "Listar cobranças",
             "description": "",
             "method": "GET",
@@ -407,7 +407,8 @@
             "headers": [
                 {
                     "name": "Content-Type",
-                    "value": "application/json"
+                    "value": "application/json",
+                    "id": "pair_1fca224b80874e75abba51410ab1f09c"
                 }
             ],
             "authentication": {},
@@ -520,7 +521,7 @@
             "body": {
                 "mimeType": "application/json",
                 "text": "{\n\t\"value\": 5,\n\t\"description\": \"Valor a mais\"\n}"
-              },
+            },
             "parameters": [],
             "headers": [
                 {
@@ -654,9 +655,9 @@
         {
             "_id": "req_a50492ad005048958b6eabe4aeb9d21f",
             "parentId": "fld_beb545b66d1a4d76a87c42cf77709a87",
-            "modified": 1645211601170,
+            "modified": 1650293916533,
             "created": 1645211601170,
-            "url": "{{domain}}/api/v3/installments?offset=&limit=",
+            "url": "{{domain}}/api/v3/installments",
             "name": "Listar parcelamentos",
             "description": "",
             "method": "GET",
@@ -665,7 +666,8 @@
             "headers": [
                 {
                     "name": "Content-Type",
-                    "value": "application/json"
+                    "value": "application/json",
+                    "id": "pair_91b13bfb053c4f519484b95365513852"
                 }
             ],
             "authentication": {},
@@ -877,9 +879,9 @@
         {
             "_id": "req_a12059a426594418a9c536738d80e0b8",
             "parentId": "fld_1ca2380e10ea415087aeadbc2bbae343",
-            "modified": 1645211601166,
+            "modified": 1650293922624,
             "created": 1645211601166,
-            "url": "{{domain}}/api/v3/subscriptions?customer=&billingType=&offset=&limit=&includeDeleted=&externalReference=",
+            "url": "{{domain}}/api/v3/subscriptions",
             "name": "Listar assinaturas",
             "description": "",
             "method": "GET",
@@ -888,7 +890,8 @@
             "headers": [
                 {
                     "name": "Content-Type",
-                    "value": "application/json"
+                    "value": "application/json",
+                    "id": "pair_4c68fcf11903463295bd130e8529c192"
                 }
             ],
             "authentication": {},
@@ -1026,9 +1029,9 @@
         {
             "_id": "req_3d1a8e33a2484d6fabe172dbb8fa50ae",
             "parentId": "fld_1ca2380e10ea415087aeadbc2bbae343",
-            "modified": 1645211601163,
+            "modified": 1650293942210,
             "created": 1645211601163,
-            "url": "{{domain}}/api/v3/subscriptions/{{id_da_assinatura}}/invoices?offset=&limit=&status=",
+            "url": "{{domain}}/api/v3/subscriptions/{{id_da_assinatura}}/invoices",
             "name": "Listar notas fiscais de uma assinatura",
             "description": "",
             "method": "GET",
@@ -1037,7 +1040,8 @@
             "headers": [
                 {
                     "name": "Content-Type",
-                    "value": "application/json"
+                    "value": "application/json",
+                    "id": "pair_25a0c24f7ec8455588d9e645a0bdde1b"
                 }
             ],
             "authentication": {},
@@ -1240,9 +1244,9 @@
         {
             "_id": "req_05a94b0217a2425b9a10b125db2209e6",
             "parentId": "fld_b428645b094240e7934d1aae9c7bb3bf",
-            "modified": 1645211601158,
+            "modified": 1650293951815,
             "created": 1645211601158,
-            "url": "{{domain}}/api/v3/paymentLinks?active=&includeDeleted=&name=&offset=&limit=",
+            "url": "{{domain}}/api/v3/paymentLinks",
             "name": "Listar link de pagamentos",
             "description": "",
             "method": "GET",
@@ -1251,7 +1255,8 @@
             "headers": [
                 {
                     "name": "Content-Type",
-                    "value": "application/json"
+                    "value": "application/json",
+                    "id": "pair_91688a94e65540958e799f03dc408c2c"
                 }
             ],
             "authentication": {},
@@ -1754,9 +1759,9 @@
         {
             "_id": "req_b712dc2fb3dd4951b4e156cbabdb557f",
             "parentId": "fld_7a775ed35d6c4108af16422aadd87ddc",
-            "modified": 1645211601149,
+            "modified": 1650293960208,
             "created": 1645211601149,
-            "url": "{{domain}}/api/v3/transfers?dateCreated=&type=",
+            "url": "{{domain}}/api/v3/transfers",
             "name": "Listar transferências",
             "description": "",
             "method": "GET",
@@ -1765,7 +1770,8 @@
             "headers": [
                 {
                     "name": "Content-Type",
-                    "value": "application/json"
+                    "value": "application/json",
+                    "id": "pair_0efe4149f7c4431896e2dfd0d787c327"
                 }
             ],
             "authentication": {},
@@ -1909,9 +1915,9 @@
         {
             "_id": "req_f1bdb7e563f54d4b82628178202accb9",
             "parentId": "fld_009a73090a15449594c926a4336a8268",
-            "modified": 1645211601146,
+            "modified": 1650293965278,
             "created": 1645211601146,
-            "url": "{{domain}}/api/v3/anticipations?payment=&installment=&status=&offset=&limit=",
+            "url": "{{domain}}/api/v3/anticipations",
             "name": "Listar antecipações",
             "description": "",
             "method": "GET",
@@ -1920,7 +1926,8 @@
             "headers": [
                 {
                     "name": "Content-Type",
-                    "value": "application/json"
+                    "value": "application/json",
+                    "id": "pair_92511a9ac6d945f3afac6676694ca992"
                 }
             ],
             "authentication": {},
@@ -2090,9 +2097,9 @@
         {
             "_id": "req_4850feaf9eed40758a2876028d2855b7",
             "parentId": "fld_4480f8cd502246d180df4af4907298bd",
-            "modified": 1645211601143,
+            "modified": 1650293971297,
             "created": 1645211601143,
-            "url": "{{domain}}/api/v3/paymentDunnings?status=&type=&payment=&requestStartDate=&requestEndDate=&offset=&limit=",
+            "url": "{{domain}}/api/v3/paymentDunnings",
             "name": "Listar negativações",
             "description": "",
             "method": "GET",
@@ -2101,7 +2108,8 @@
             "headers": [
                 {
                     "name": "Content-Type",
-                    "value": "application/json"
+                    "value": "application/json",
+                    "id": "pair_af215b24603349a881b9d8ac2d34bb36"
                 }
             ],
             "authentication": {},
@@ -2146,9 +2154,9 @@
         {
             "_id": "req_215a1235bc4044a0a187d7f16c0185f8",
             "parentId": "fld_4480f8cd502246d180df4af4907298bd",
-            "modified": 1645211601142,
+            "modified": 1650293976020,
             "created": 1645211601142,
-            "url": "{{domain}}/api/v3/paymentDunnings/{{id_da_recuperacao}}/partialPayments?offset=&limit=",
+            "url": "{{domain}}/api/v3/paymentDunnings/{{id_da_recuperacao}}/partialPayments",
             "name": "Listar pagamentos recebidos",
             "description": "",
             "method": "GET",
@@ -2157,7 +2165,8 @@
             "headers": [
                 {
                     "name": "Content-Type",
-                    "value": "application/json"
+                    "value": "application/json",
+                    "id": "pair_24fd13fc306a4a29876fc6e4adba4ca7"
                 }
             ],
             "authentication": {},
@@ -2174,9 +2183,9 @@
         {
             "_id": "req_10c7dbd87089408199e36717daa18b7f",
             "parentId": "fld_4480f8cd502246d180df4af4907298bd",
-            "modified": 1645211601142,
+            "modified": 1650293979475,
             "created": 1645211601142,
-            "url": "{{domain}}/api/v3/paymentDunnings/{{id_da_recuperacao}}/history?offset=&limit=",
+            "url": "{{domain}}/api/v3/paymentDunnings/{{id_da_recuperacao}}/history",
             "name": "Listar histórico de eventos",
             "description": "",
             "method": "GET",
@@ -2185,7 +2194,8 @@
             "headers": [
                 {
                     "name": "Content-Type",
-                    "value": "application/json"
+                    "value": "application/json",
+                    "id": "pair_caf0909b57c24a609619a0399e9c9fdf"
                 }
             ],
             "authentication": {},
@@ -2202,9 +2212,9 @@
         {
             "_id": "req_12417b14bff4442596795720c3dbb2fd",
             "parentId": "fld_4480f8cd502246d180df4af4907298bd",
-            "modified": 1645211601141,
+            "modified": 1650293983437,
             "created": 1645211601141,
-            "url": "{{domain}}/api/v3/paymentDunnings/paymentsAvailableForDunning?offset=&limit=",
+            "url": "{{domain}}/api/v3/paymentDunnings/paymentsAvailableForDunning",
             "name": "Listar cobranças disponíveis para negativação",
             "description": "",
             "method": "GET",
@@ -2213,7 +2223,8 @@
             "headers": [
                 {
                     "name": "Content-Type",
-                    "value": "application/json"
+                    "value": "application/json",
+                    "id": "pair_ed150b015fbe4844827f166a2ea418f6"
                 }
             ],
             "authentication": {},
@@ -2426,9 +2437,9 @@
         {
             "_id": "req_9b100c9917f841a1ac242b3071b521e2",
             "parentId": "fld_fd2fcd829dfe4a4b9a6f64e4227de3ce",
-            "modified": 1645211601137,
+            "modified": 1650293988754,
             "created": 1645211601137,
-            "url": "{{domain}}/api/v3/bill?offset=&limit=",
+            "url": "{{domain}}/api/v3/bill",
             "name": "Listar pagamentos de conta",
             "description": "",
             "method": "GET",
@@ -2437,7 +2448,8 @@
             "headers": [
                 {
                     "name": "Content-Type",
-                    "value": "application/json"
+                    "value": "application/json",
+                    "id": "pair_47f0a2b113a14cbea89775f184960522"
                 }
             ],
             "authentication": {},
@@ -2525,9 +2537,9 @@
         {
             "_id": "req_78700d00a9e2417ba003add07a81e835",
             "parentId": "fld_d2b569e870534b83957654943c375c1e",
-            "modified": 1645211601134,
+            "modified": 1650293993806,
             "created": 1645211601134,
-            "url": "{{domain}}/api/v3/creditBureauReport?startDate=&endDate=&offset=&limit=",
+            "url": "{{domain}}/api/v3/creditBureauReport",
             "name": "Listar consultas",
             "description": "",
             "method": "GET",
@@ -2536,7 +2548,8 @@
             "headers": [
                 {
                     "name": "Content-Type",
-                    "value": "application/json"
+                    "value": "application/json",
+                    "id": "pair_41d2ee4696e5439da76cec62eed571f8"
                 }
             ],
             "authentication": {},
@@ -2553,9 +2566,9 @@
         {
             "_id": "req_1fbea63f66824f548ea60299aeb04ed2",
             "parentId": "fld_54408d61fa204a789761f96f95b79464",
-            "modified": 1645211601133,
+            "modified": 1650293997786,
             "created": 1645211601133,
-            "url": "{{domain}}/api/v3/financialTransactions?startDate=&finishDate=&limit=&offset=",
+            "url": "{{domain}}/api/v3/financialTransactions",
             "name": "Recuperar extrato",
             "description": "",
             "method": "GET",
@@ -2564,7 +2577,8 @@
             "headers": [
                 {
                     "name": "Content-Type",
-                    "value": "application/json"
+                    "value": "application/json",
+                    "id": "pair_5857f78c77244a4ead1491cfca09f871"
                 }
             ],
             "authentication": {},
@@ -2593,7 +2607,7 @@
         {
             "_id": "req_2c1b0313ff4e49da8c92b42241ea2299",
             "parentId": "fld_ca3afb775fbd4798b3389b077c759fbb",
-            "modified": 1647628332113,
+            "modified": 1650294000453,
             "created": 1647628207446,
             "url": "{{domain}}/api/v3/finance/balance",
             "name": "Recuperar saldo da conta",
@@ -2635,7 +2649,7 @@
         {
             "_id": "req_5a89c338e5d6490faa9be51c03049f30",
             "parentId": "fld_ca3afb775fbd4798b3389b077c759fbb",
-            "modified": 1647628326127,
+            "modified": 1650294000897,
             "created": 1647628312541,
             "url": "{{domain}}/api/v3/finance/payment/statistics",
             "name": "Estatísticas de cobranças",
@@ -2925,9 +2939,9 @@
         {
             "_id": "req_f13a4f2c4a4c4d6d928389836e11fa92",
             "parentId": "fld_42f0355f8e1d4d6f9ea67fd9f3af196a",
-            "modified": 1645211601126,
+            "modified": 1650294010531,
             "created": 1645211601126,
-            "url": "{{domain}}/api/v3/invoices?effectiveDate%5Bge%5D=&effectiveDate%5Ble%5D=&payment=&installment=&status=&offset=&limit=",
+            "url": "{{domain}}/api/v3/invoices",
             "name": "Listar notas fiscais",
             "description": "",
             "method": "GET",
@@ -2936,7 +2950,8 @@
             "headers": [
                 {
                     "name": "Content-Type",
-                    "value": "application/json"
+                    "value": "application/json",
+                    "id": "pair_8fc0de68255e41b9a5be74e17537bdb4"
                 }
             ],
             "authentication": {},
@@ -3009,9 +3024,9 @@
         {
             "_id": "req_f1739750160148e0a9e45e659d69e405",
             "parentId": "fld_42f0355f8e1d4d6f9ea67fd9f3af196a",
-            "modified": 1645211601124,
+            "modified": 1650294014385,
             "created": 1645211601124,
-            "url": "{{domain}}/api/v3/invoices/municipalServices?description=",
+            "url": "{{domain}}/api/v3/invoices/municipalServices",
             "name": "Listar serviços municipais",
             "description": "",
             "method": "GET",
@@ -3020,7 +3035,8 @@
             "headers": [
                 {
                     "name": "Content-Type",
-                    "value": "application/json"
+                    "value": "application/json",
+                    "id": "pair_3fc697f8ab154b3484a29a2ac355e490"
                 }
             ],
             "authentication": {},
@@ -3231,28 +3247,19 @@
             "_type": "request"
         },
         {
-            "_id": "req_a71e9d6b5fa541e3a079513b34310670",
+            "_id": "req_fe976e6b9e694f0e96d99761cee62bd8",
             "parentId": "fld_b1eab30599fa4506b4e7f9d13cabe83a",
-            "modified": 1646936579586,
-            "created": 1646935925033,
-            "url": "{{ domain }}/api/v3/pix/qrCodes/decode",
-            "name": "Decodificar um QRCode",
+            "modified": 1648136162878,
+            "created": 1648136139744,
+            "url": "{{ domain }}/api/v3/pix/addressKeys/{{ id_da_chave_pix }}",
+            "name": "Remover chave",
             "description": "",
-            "method": "POST",
-            "body": {
-                "mimeType": "application/json",
-                "text": "{\n\t\"payload\": \"00020126360014br.gov.bcb.pix0114+554799878454552040000530398654040.005802BR5905ASAAS6009São Paulo61088922730162290525ASAAS-1-2SHTS88FSECYMCUQX6304CA10\"\n}"
-            },
+            "method": "DELETE",
+            "body": {},
             "parameters": [],
-            "headers": [
-                {
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "id": "pair_e7173d51e92b449085231317e516beab"
-                }
-            ],
+            "headers": [],
             "authentication": {},
-            "metaSortKey": -1646935925033,
+            "metaSortKey": -1648136139744,
             "isPrivate": false,
             "settingStoreCookies": true,
             "settingSendCookies": true,
@@ -3273,6 +3280,29 @@
             "environmentPropertyOrder": null,
             "metaSortKey": -1645211601121.5,
             "_type": "request_group"
+        },
+        {
+            "_id": "req_8cc463239ad54c9f8ce2c1ba928b8d5b",
+            "parentId": "fld_b1eab30599fa4506b4e7f9d13cabe83a",
+            "modified": 1648136125003,
+            "created": 1648136051443,
+            "url": "{{ domain }}/api/v3/pix/addressKeys/{{ id_da_chave_pix }}",
+            "name": "Recuperar uma única chave",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1648136051443,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
         },
         {
             "_id": "req_0f091460646d4d21a9c1e218865741c0",
@@ -3330,42 +3360,28 @@
             "_type": "request"
         },
         {
-            "_id": "req_8cc463239ad54c9f8ce2c1ba928b8d5b",
+            "_id": "req_a71e9d6b5fa541e3a079513b34310670",
             "parentId": "fld_b1eab30599fa4506b4e7f9d13cabe83a",
-            "modified": 1648136125003,
-            "created": 1648136051443,
-            "url": "{{ domain }}/api/v3/pix/addressKeys/{{ id_da_chave_pix }}",
-            "name": "Recuperar uma única chave",
+            "modified": 1646936579586,
+            "created": 1646935925033,
+            "url": "{{ domain }}/api/v3/pix/qrCodes/decode",
+            "name": "Decodificar um QRCode",
             "description": "",
-            "method": "GET",
-            "body": {},
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"payload\": \"00020126360014br.gov.bcb.pix0114+554799878454552040000530398654040.005802BR5905ASAAS6009São Paulo61088922730162290525ASAAS-1-2SHTS88FSECYMCUQX6304CA10\"\n}"
+            },
             "parameters": [],
-            "headers": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_e7173d51e92b449085231317e516beab"
+                }
+            ],
             "authentication": {},
-            "metaSortKey": -1648136051443,
-            "isPrivate": false,
-            "settingStoreCookies": true,
-            "settingSendCookies": true,
-            "settingDisableRenderRequestBody": false,
-            "settingEncodeUrl": true,
-            "settingRebuildPath": true,
-            "settingFollowRedirects": "global",
-            "_type": "request"
-        },
-        {
-            "_id": "req_fe976e6b9e694f0e96d99761cee62bd8",
-            "parentId": "fld_b1eab30599fa4506b4e7f9d13cabe83a",
-            "modified": 1648136162878,
-            "created": 1648136139744,
-            "url": "{{ domain }}/api/v3/pix/addressKeys/{{ id_da_chave_pix }}",
-            "name": "Remover chave",
-            "description": "",
-            "method": "DELETE",
-            "body": {},
-            "parameters": [],
-            "headers": [],
-            "authentication": {},
-            "metaSortKey": -1648136139744,
+            "metaSortKey": -1646935925033,
             "isPrivate": false,
             "settingStoreCookies": true,
             "settingSendCookies": true,
@@ -3472,9 +3488,9 @@
         {
             "_id": "req_5d4489b99ce949ee929463a936dc7f15",
             "parentId": "fld_b1eab30599fa4506b4e7f9d13cabe83a",
-            "modified": 1646651481796,
+            "modified": 1650294024276,
             "created": 1646650111629,
-            "url": "{{ domain }}/api/v3/pix/transactions?offset=&type=&status=&type=",
+            "url": "{{ domain }}/api/v3/pix/transactions",
             "name": "Listar transações pix",
             "description": "",
             "method": "GET",
@@ -3485,6 +3501,12 @@
                     "id": "pair_c04a0d65b28f43dda367479a8044ac9a",
                     "name": "Content-Type",
                     "value": "application/json",
+                    "description": ""
+                },
+                {
+                    "id": "pair_0a9a1842d40a4bf8aaebb222b218240b",
+                    "name": "",
+                    "value": "",
                     "description": ""
                 }
             ],
@@ -3686,9 +3708,9 @@
         {
             "_id": "req_93899154709540329334860f22b47245",
             "parentId": "fld_376d083ff8a54009b84498bc434822e1",
-            "modified": 1645211601114,
+            "modified": 1650294028478,
             "created": 1645211601114,
-            "url": "{{domain}}/api/v3/accounts?cpfCnpj=&name=&email=&walletId=&limit=&offset=",
+            "url": "{{domain}}/api/v3/accounts",
             "name": "Listar contas",
             "description": "",
             "method": "GET",
@@ -3697,7 +3719,8 @@
             "headers": [
                 {
                     "name": "Content-Type",
-                    "value": "application/json"
+                    "value": "application/json",
+                    "id": "pair_79ab5b8c5f9e43c29944e0bfb4e4c3d0"
                 }
             ],
             "authentication": {},
