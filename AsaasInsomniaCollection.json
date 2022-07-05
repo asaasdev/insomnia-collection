@@ -1932,7 +1932,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "",
-                "text": "{\n   \"pixAddressKey\": \"+5547999999999\",\n   \"value\":1000.0,\n   \"description\":\"Pix com chave\"\n}"
+                "text": "{\n   \"pixAddressKey\": \"+5547999999999\",\n   \"pixAddressKeyType\": \"PHONE\",\n   \"value\":1000.0,\n   \"description\":\"Pix com chave\"\n}"
             },
             "parameters": [],
             "headers": [
