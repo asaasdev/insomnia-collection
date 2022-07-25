@@ -1814,6 +1814,40 @@
             "_type": "request_group"
         },
         {
+            "_id":"req_2866247e0b644b07a5950dbb56cbc4f1",
+            "parentId":"fld_3a8c777616dd42078b911c003bf5588b",
+            "modified":1658752118251,
+            "created":1658752002941,
+            "url":"{{domain}}/api/v3/notifications/{{id_da_notificacao}}",
+            "name":"Atualizar notificação existente em lote",
+            "description":"",
+            "method":"POST",
+            "body":{
+               "mimeType":"",
+               "text":"{\n  \"enabled\": true,\n  \"emailEnabledForProvider\": true,\n  \"smsEnabledForProvider\": true,\n  \"emailEnabledForCustomer\": true,\n  \"smsEnabledForCustomer\": true,\n  \"phoneCallEnabledForCustomer\": false,\n  \"scheduleOffset\": 5\n}"
+            },
+            "parameters":[
+           
+            ],
+            "headers":[
+               {
+                  "name":"Content-Type",
+                  "value":"application/json",
+                  "id":"pair_51e23b5ffbce4d879b400beff9eda8bf"
+               }
+            ],
+            "authentication":{},
+            "metaSortKey":-1645211601151.5,
+            "isPrivate":false,
+            "settingStoreCookies":true,
+            "settingSendCookies":true,
+            "settingDisableRenderRequestBody":false,
+            "settingEncodeUrl":true,
+            "settingRebuildPath":true,
+            "settingFollowRedirects":"global",
+            "_type":"request"
+        },
+        {
             "_id": "req_491decef1f684f39a52efd9c2ec33cd8",
             "parentId": "fld_7a775ed35d6c4108af16422aadd87ddc",
             "modified": 1650391135823,
