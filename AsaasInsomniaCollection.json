@@ -1818,14 +1818,14 @@
             "parentId":"fld_3a8c777616dd42078b911c003bf5588b",
             "modified":1658752118251,
             "created":1658752002941,
-            "url":"{{domain}}/api/v3/notifications/{{id_da_notificacao}}",
+            "url":"{{domain}}/api/v3/notifications/batch",
             "name":"Atualizar notificação existente em lote",
             "description":"",
             "method":"POST",
             "body":{
-               "mimeType":"",
-               "text":"{\n  \"enabled\": true,\n  \"emailEnabledForProvider\": true,\n  \"smsEnabledForProvider\": true,\n  \"emailEnabledForCustomer\": true,\n  \"smsEnabledForCustomer\": true,\n  \"phoneCallEnabledForCustomer\": false,\n  \"scheduleOffset\": 5\n}"
-            },
+                "mimeType":"",
+                "text":"{\n   \"customer\": \"{CUSTOMER_ID}\",\n    \"notifications\": [\n        {\n        \"id\": \"{NOTIFICATION_ID}\",\n        \"enabled\": true,\n        \"emailEnabledForProvider\": true,\n        \"smsEnabledForProvider\": true,\n        \"emailEnabledForCustomer\": true,\n        \"smsEnabledForCustomer\": true,\n        \"phoneCallEnabledForCustomer\": false,\n        \"whatsappEnabledForCustomer\": false\n        },\n        {\n        \"id\": \"{NOTIFICATION_ID}\",\n        \"enabled\": true,\n        \"emailEnabledForProvider\": true,\n        \"smsEnabledForProvider\": true,\n        \"emailEnabledForCustomer\": true,\n        \"smsEnabledForCustomer\": true,\n        \"phoneCallEnabledForCustomer\": false,\n        \"whatsappEnabledForCustomer\": false\n        }\n    ]\n}"
+             },
             "parameters":[
            
             ],
