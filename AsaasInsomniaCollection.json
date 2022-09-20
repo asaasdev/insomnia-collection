@@ -562,6 +562,13 @@
                     "disabled": true
                 },
                 {
+                    "id":"pair_90102943d6584ffea3f7a7237646cafc",
+                    "name":"user",
+                    "value":"",
+                    "description":"",
+                    "disabled":true
+                },
+                {
                     "id": "pair_62ff1dbcf86347d5a0a25d2665f1a20b",
                     "name": "offset",
                     "value": "",
