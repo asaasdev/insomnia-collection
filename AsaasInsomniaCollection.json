@@ -1833,9 +1833,7 @@
                 "mimeType":"",
                 "text":"{\n   \"customer\": \"{CUSTOMER_ID}\",\n    \"notifications\": [\n        {\n        \"id\": \"{NOTIFICATION_ID}\",\n        \"enabled\": true,\n        \"emailEnabledForProvider\": true,\n        \"smsEnabledForProvider\": true,\n        \"emailEnabledForCustomer\": true,\n        \"smsEnabledForCustomer\": true,\n        \"phoneCallEnabledForCustomer\": false,\n        \"whatsappEnabledForCustomer\": false\n        },\n        {\n        \"id\": \"{NOTIFICATION_ID}\",\n        \"enabled\": true,\n        \"emailEnabledForProvider\": true,\n        \"smsEnabledForProvider\": true,\n        \"emailEnabledForCustomer\": true,\n        \"smsEnabledForCustomer\": true,\n        \"phoneCallEnabledForCustomer\": false,\n        \"whatsappEnabledForCustomer\": false\n        }\n    ]\n}"
              },
-            "parameters":[
-           
-            ],
+            "parameters":[],
             "headers":[
                {
                   "name":"Content-Type",
@@ -4623,9 +4621,7 @@
                "mimeType":"",
                "text":"{\n  \"url\": \"https://www.exemplo.com/webhook/asaas\",\n  \"email\": \"marcelo.almeida@gmail.com\",\n  \"interrupted\": false,\n  \"enabled\": true,\n  \"apiVersion\": 3,\n  \"authToken\": \"5tLxsL6uoN\"\n}"
             },
-            "parameters":[
-               
-            ],
+            "parameters":[],
             "headers":[
                {
                   "name":"Content-Type",
@@ -4669,12 +4665,8 @@
             "name":"Recuperar configuração de webhook",
             "description":"",
             "method":"GET",
-            "body":{
-               
-            },
-            "parameters":[
-               
-            ],
+            "body":{},
+            "parameters":[],
             "headers":[
                {
                   "name":"Content-Type",
