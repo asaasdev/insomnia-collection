@@ -4611,6 +4611,91 @@
             "_type": "request"
         },
         {
+            "_id":"req_1cf2855b7ffd4bd4b8c5b9a4de0081ec",
+            "parentId":"fld_6f537ebb36f646fabad334da6bee9cfb",
+            "modified":1673545200397,
+            "created":1673545124148,
+            "url":"{{domain}}/api/v3/webhook/mobilePhoneRecharge",
+            "name":"Criar ou atualizar configurações para webhook",
+            "description":"",
+            "method":"POST",
+            "body":{
+               "mimeType":"",
+               "text":"{\n  \"url\": \"https://www.exemplo.com/webhook/asaas\",\n  \"email\": \"marcelo.almeida@gmail.com\",\n  \"interrupted\": false,\n  \"enabled\": true,\n  \"apiVersion\": 3,\n  \"authToken\": \"5tLxsL6uoN\"\n}"
+            },
+            "parameters":[
+               
+            ],
+            "headers":[
+               {
+                  "name":"Content-Type",
+                  "value":"application/json",
+                  "id":"pair_32a858a8e8674f2da591388855028858"
+               }
+            ],
+            "authentication":{
+               
+            },
+            "metaSortKey":-1673545128428,
+            "isPrivate":false,
+            "settingStoreCookies":true,
+            "settingSendCookies":true,
+            "settingDisableRenderRequestBody":false,
+            "settingEncodeUrl":true,
+            "settingRebuildPath":true,
+            "settingFollowRedirects":"global",
+            "_type":"request"
+         },
+         {
+            "_id":"fld_6f537ebb36f646fabad334da6bee9cfb",
+            "parentId":"fld_e31b33f9096d41b780e79cff2ccec5e1",
+            "modified":1673545093346,
+            "created":1673545088409,
+            "name":"Webhook de Recarga de celular",
+            "description":"",
+            "environment":{
+               
+            },
+            "environmentPropertyOrder":null,
+            "metaSortKey":-1645211601068,
+            "_type":"request_group"
+         },
+         {
+            "_id":"req_258102413f9a466f86e33d7f52b4d1ca",
+            "parentId":"fld_6f537ebb36f646fabad334da6bee9cfb",
+            "modified":1673545171106,
+            "created":1673545138994,
+            "url":"{{domain}}/api/v3/webhook/mobilePhoneRecharge",
+            "name":"Recuperar configuração de webhook",
+            "description":"",
+            "method":"GET",
+            "body":{
+               
+            },
+            "parameters":[
+               
+            ],
+            "headers":[
+               {
+                  "name":"Content-Type",
+                  "value":"application/json",
+                  "id":"pair_1ba7b078ede14a4fa4071b5941b40c7e"
+               }
+            ],
+            "authentication":{
+               
+            },
+            "metaSortKey":-1673545128378,
+            "isPrivate":false,
+            "settingStoreCookies":true,
+            "settingSendCookies":true,
+            "settingDisableRenderRequestBody":false,
+            "settingEncodeUrl":true,
+            "settingRebuildPath":true,
+            "settingFollowRedirects":"global",
+            "_type":"request"
+        },
+        {
             "_id": "req_93899154709540329334860f22b47245",
             "parentId": "fld_376d083ff8a54009b84498bc434822e1",
             "modified": 1650294028478,
