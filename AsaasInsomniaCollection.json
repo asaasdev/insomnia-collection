@@ -916,6 +916,54 @@
             "_type": "request"
         },
         {
+            "_id":"req_27225c44ef1f402a9e0f7b8668108f39",
+            "parentId":"fld_beb545b66d1a4d76a87c42cf77709a87",
+            "modified":1676319984422,
+            "created":1676319783081,
+            "url":"{{domain}}/api/v3/installments/{{id_da_parcela}}/paymentBook",
+            "name":"Listar carnê de parcelamentos",
+            "description":"",
+            "method":"GET",
+            "body":{
+           
+            },
+            "parameters":[
+               {
+                  "id":"pair_f1fa8dff6d364fa6928e47aee13011e8",
+                  "name":"offset",
+                  "value":"",
+                  "description":"",
+                  "disabled":true
+               },
+               {
+                  "id":"pair_b307af26aa2d463aacc3eec058750282",
+                  "name":"limit",
+                  "value":"",
+                  "description":"",
+                  "disabled":true
+               }
+            ],
+            "headers":[
+               {
+                  "name":"Content-Type",
+                  "value":"application/json",
+                  "id":"pair_91b13bfb053c4f519484b95365513852"
+               }
+            ],
+            "authentication":{
+           
+            },
+            "metaSortKey":-1645211601169.5,
+            "isPrivate":false,
+            "settingStoreCookies":true,
+            "settingSendCookies":true,
+            "settingDisableRenderRequestBody":false,
+            "settingEncodeUrl":true,
+            "settingRebuildPath":true,
+            "settingFollowRedirects":"global",
+            "_type":"request"
+        },
+        {
             "_id": "req_e076e6199b1f4dbfb7510d4bcb2c96fa",
             "parentId": "fld_beb545b66d1a4d76a87c42cf77709a87",
             "modified": 1645211601169,
@@ -1141,6 +1189,53 @@
             "settingRebuildPath": true,
             "settingFollowRedirects": "global",
             "_type": "request"
+        },
+        {
+            "_id":"req_73ed85e70613453e936c7ad4408b26d4",
+            "parentId":"fld_1ca2380e10ea415087aeadbc2bbae343",
+            "modified":1676320190380,
+            "created":1676319812779,
+            "url":"{{domain}}/api/v3/subscriptions/{{id_da_assinatura}}/paymentBook",
+            "name":"Listar carnê de parcelamento de assinatura",
+            "description":"",
+            "method":"GET",
+            "body":{
+           
+            },
+            "parameters":[
+               {
+                  "id":"pair_4b9fb1afd5a14418a3408bf79167c880",
+                  "name":"month",
+                  "value":"",
+                  "description":"",
+                  "disabled":true
+               },
+               {
+                  "id":"pair_1df979f4478b4980ba8ea7537075c800",
+                  "name":"year",
+                  "value":"",
+                  "description":"",
+                  "disabled":true
+               }
+            ],
+            "headers":[
+               {
+                  "name":"Content-Type",
+                  "value":"application/json"
+               }
+            ],
+            "authentication":{
+           
+            },
+            "metaSortKey":-1645211601165.5,
+            "isPrivate":false,
+            "settingStoreCookies":true,
+            "settingSendCookies":true,
+            "settingDisableRenderRequestBody":false,
+            "settingEncodeUrl":true,
+            "settingRebuildPath":true,
+            "settingFollowRedirects":"global",
+            "_type":"request"
         },
         {
             "_id": "req_56b8925041934ac19a7ec8cfa225a80c",
