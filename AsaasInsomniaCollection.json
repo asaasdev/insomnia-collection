@@ -2441,7 +2441,7 @@
             "modified": 1677182593157,
             "created": 1677182561059,
             "url": "{{domain}}/api/v3/anticipations/agreement/sign",
-            "name": "Concordar ou discordar do termo aditivo de antecipação",
+            "name": "Concordar ou discordar com Aditivo aos Termos de Uso do ASAAS para contratação do Serviço de Antecipação",
             "description": "",
             "method": "POST",
             "body": {
