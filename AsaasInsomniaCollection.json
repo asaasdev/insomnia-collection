@@ -2436,6 +2436,37 @@
             "_type": "request"
         },
         {
+            "_id": "req_3d01d1b601034ba0b640ba937b8b3319",
+            "parentId": "fld_009a73090a15449594c926a4336a8268",
+            "modified": 1677182593157,
+            "created": 1677182561059,
+            "url": "{{domain}}/api/v3/anticipations/agreement/sign",
+            "name": "Concordar ou discordar com Aditivo aos Termos de Uso do ASAAS para contratação do Serviço de Antecipação",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "",
+                "text": "{\n  \"agreed\": true\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1645211601096,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
             "_id": "req_0d40c3ade684441ba4b155f2ec6f77f7",
             "parentId": "fld_4480f8cd502246d180df4af4907298bd",
             "modified": 1645211601145,
