@@ -5002,7 +5002,7 @@
             "created": 1640866150100,
             "name": "Local",
             "data": {
-                "domain": "http://localhost:8080",
+                "domain": "http://localhost:8080/api",
                 "sua_chave_api": "39038ebdbd30ffb12a049090b245745135eae36f32c0570ed9180ab1409c33f3"
             },
             "dataPropertyOrder": {
