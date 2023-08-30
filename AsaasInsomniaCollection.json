@@ -752,7 +752,7 @@
             "parentId": "fld_92f2a158264540e9b86f65c0769bc82c",
             "modified": 1645211601173,
             "created": 1645211601173,
-            "url": "https://www.asaas.com/api/v3/payments",
+            "url": "https://api.asaas.com/v3/payments",
             "name": "Obter linha digitável do boleto",
             "description": "",
             "method": "GET",
@@ -3715,7 +3715,7 @@
             "parentId": "fld_7d4994db9e8e4d6ab6661b86bcc5a5dd",
             "modified": 1652067870507,
             "created": 1652067818570,
-            "url": "https://www.asaas.com/api/v3/wallets",
+            "url": "https://api.asaas.com/v3/wallets",
             "name": "Recuperar Wallet ID",
             "description": "",
             "method": "GET",
@@ -5044,7 +5044,7 @@
             "created": 1640866169931,
             "name": "Production",
             "data": {
-                "domain": "https://www.asaas.com",
+                "domain": "https://api.asaas.com",
                 "sua_chave_api": ""
             },
             "dataPropertyOrder": {
