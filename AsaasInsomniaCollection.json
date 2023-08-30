@@ -4996,27 +4996,6 @@
             "_type": "api_spec"
         },
         {
-            "_id": "env_3fe0a758b3464481bac20e03ea97a2b6",
-            "parentId": "env_444394977525940e407a460da0e303ab00449541",
-            "modified": 1647628275008,
-            "created": 1640866150100,
-            "name": "Local",
-            "data": {
-                "domain": "http://localhost:8080/api",
-                "sua_chave_api": "39038ebdbd30ffb12a049090b245745135eae36f32c0570ed9180ab1409c33f3"
-            },
-            "dataPropertyOrder": {
-                "&": [
-                    "domain",
-                    "sua_chave_api"
-                ]
-            },
-            "color": null,
-            "isPrivate": false,
-            "metaSortKey": 1640866150100,
-            "_type": "environment"
-        },
-        {
             "_id": "env_d0f6aee3d7b743898b744c6911b49513",
             "parentId": "env_444394977525940e407a460da0e303ab00449541",
             "modified": 1645212159880,
