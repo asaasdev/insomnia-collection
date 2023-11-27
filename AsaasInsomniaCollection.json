@@ -3989,7 +3989,7 @@
             "parentId": "fld_42f0355f8e1d4d6f9ea67fd9f3af196a",
             "modified": 1650294014385,
             "created": 1645211601124,
-            "url": "{{domain}}/v3/invoices/municipalServices",
+            "url": "{{domain}}/v3/fiscalInfo/services",
             "name": "Listar serviços municipais",
             "description": "",
             "method": "GET",
@@ -3998,6 +3998,20 @@
                 {
                     "id": "pair_bc7ba82d54d34b9a91968760d5247086",
                     "name": "description",
+                    "value": "",
+                    "description": "",
+                    "disabled": true
+                },
+                {
+                    "id": "pair_a42fafb47457465ab7e50524a4038662",
+                    "name": "limit",
+                    "value": "",
+                    "description": "",
+                    "disabled": true
+                },
+                {
+                    "id": "pair_2c834a0504ad41428f114bd2789f873d",
+                    "name": "offset",
                     "value": "",
                     "description": "",
                     "disabled": true
