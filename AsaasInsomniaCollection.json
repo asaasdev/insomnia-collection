@@ -916,6 +916,53 @@
             "_type": "request"
         },
         {
+            "_id": "req_1b333a2a0cef4b6f89caff119ffff5b4",
+            "parentId": "fld_a7db4e1257344295914db546cbe3bab0",
+            "modified": 1705689669520,
+            "created": 1705689667699,
+            "url": "{{domain}}/v3/installments/{{id_da_parcela}}/paymentBook",
+            "name": "Listar cobranças de um parcelamento",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "id": "pair_f1fa8dff6d364fa6928e47aee13011e8",
+                    "name": "offset",
+                    "value": "",
+                    "description": "",
+                    "disabled": true
+                },
+                {
+                    "id": "pair_b307af26aa2d463aacc3eec058750282",
+                    "name": "limit",
+                    "value": "",
+                    "description": "",
+                    "disabled": true
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_91b13bfb053c4f519484b95365513852"
+                }
+            ],
+            "authentication": {
+
+            },
+            "metaSortKey": -1645211601169.75,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
             "_id":"req_27225c44ef1f402a9e0f7b8668108f39",
             "parentId":"fld_beb545b66d1a4d76a87c42cf77709a87",
             "modified":1676319984422,
