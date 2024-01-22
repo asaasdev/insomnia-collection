@@ -920,7 +920,7 @@
             "parentId": "fld_a7db4e1257344295914db546cbe3bab0",
             "modified": 1705689669520,
             "created": 1705689667699,
-            "url": "{{domain}}/v3/installments/{{id_da_parcela}}/paymentBook",
+            "url": "{{domain}}/v3/installments/{{id_da_parcela}}/payments",
             "name": "Listar cobranças de um parcelamento",
             "description": "",
             "method": "GET",
